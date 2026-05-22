@@ -5,21 +5,21 @@
 class Kurl < Formula
   desc "A fast, colorized Go CLI for viewing HTTP API responses in a clean, human-readable format."
   homepage "https://github.com/kavix/kurl"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kavix/kurl/releases/download/v1.0.2/kurl_darwin_amd64.tar.gz"
-      sha256 "92f05046e684c11715c0b2dc161b63a9490b30daf1f0d66a1f9ca7fd241342e7"
+      url "https://github.com/kavix/kurl/releases/download/v1.0.3/kurl_darwin_amd64.tar.gz"
+      sha256 "0fd7cba5203cbe5292282ce71cea0d0e6692add16b9003c6278cf887553bfcf4"
 
       define_method(:install) do
         bin.install "kurl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kavix/kurl/releases/download/v1.0.2/kurl_darwin_arm64.tar.gz"
-      sha256 "695bd2a4ba214b2d212d1150b86e8708be0db2d2a51e3544ff0ed0cc12e0a2fb"
+      url "https://github.com/kavix/kurl/releases/download/v1.0.3/kurl_darwin_arm64.tar.gz"
+      sha256 "e51a1da8839dd9a79d5772ee26881e24c05c7a87aeac6230ca97a16fc918a3c6"
 
       define_method(:install) do
         bin.install "kurl"
@@ -29,15 +29,15 @@ class Kurl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kavix/kurl/releases/download/v1.0.2/kurl_linux_amd64.tar.gz"
-      sha256 "c72ac547ab8e29f03c21ff21a164abb230dc1a9e685578c00eaa7e9167bc13f9"
+      url "https://github.com/kavix/kurl/releases/download/v1.0.3/kurl_linux_amd64.tar.gz"
+      sha256 "5a0d239901a14391654a3d01538997848bc2bad97ac98ddf01b281c82e2931b1"
       define_method(:install) do
         bin.install "kurl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kavix/kurl/releases/download/v1.0.2/kurl_linux_arm64.tar.gz"
-      sha256 "849fe7fb2726402a599e98dc47dc568a314257e151ebf7515ae8818cd73d0015"
+      url "https://github.com/kavix/kurl/releases/download/v1.0.3/kurl_linux_arm64.tar.gz"
+      sha256 "8ec631d12696756c7f70829932611151574999cad5747c092116eb82548d6dee"
       define_method(:install) do
         bin.install "kurl"
       end
