@@ -5,21 +5,21 @@
 class Kurl < Formula
   desc "A fast, colorized Go CLI for viewing HTTP API responses in a clean, human-readable format."
   homepage "https://github.com/kavix/kurl"
-  version "0.1.0-auto.2026.8.10-082554-ab90f0b"
+  version "0.1.0-auto.2026.8.10-082747-6db3535"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082554-ab90f0b/kurl_darwin_amd64.tar.gz"
-      sha256 "d6d64c6dac81c94a16d6d5c9ab1d45e1db1481dd2b2bc1556b2ba0e70f925acb"
+      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082747-6db3535/kurl_darwin_amd64.tar.gz"
+      sha256 "df7a098332b4792b56b7ccd4cbacb954530f651eeb98c3b9bc503c447da9cc98"
 
       define_method(:install) do
         bin.install "kurl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082554-ab90f0b/kurl_darwin_arm64.tar.gz"
-      sha256 "8ad4e42eb6e6b1c594d0f7542dfb9e2ff14732aca2194b1b8af409f3d7641868"
+      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082747-6db3535/kurl_darwin_arm64.tar.gz"
+      sha256 "275bd0ba60848f2e629892a1e10605b1b3f6e14c1a382818c7c3b05cf530860a"
 
       define_method(:install) do
         bin.install "kurl"
@@ -29,15 +29,15 @@ class Kurl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082554-ab90f0b/kurl_linux_amd64.tar.gz"
-      sha256 "48feeb988aed59d4a74d9618b0fafa9852c040ed924ac03cb3a5adababa83698"
+      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082747-6db3535/kurl_linux_amd64.tar.gz"
+      sha256 "e00a423347cf859b91208289bda02b378415babb7f2fe1ca202f7c9948019b5f"
       define_method(:install) do
         bin.install "kurl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082554-ab90f0b/kurl_linux_arm64.tar.gz"
-      sha256 "56d0902eb0d2fbbf1d9cd0a9627996ccda89cfb3ce674a87bc725aa0c83e5134"
+      url "https://github.com/kavix/kurl/releases/download/v0.1.0-auto.2026.8.10-082747-6db3535/kurl_linux_arm64.tar.gz"
+      sha256 "70b2a3c52928db699565244ad71ab5c80c0ed87e32030cd45e49094cd8bca1b9"
       define_method(:install) do
         bin.install "kurl"
       end
